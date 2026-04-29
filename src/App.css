@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 ul,
 ol,
 li {
@@ -40,4 +45,20 @@ li {
 }
 .search-box input:focus {
   outline: none;
+}
+
+.CardBox {
+  overflow: hidden;
+}
+.CardBox img:hover {
+  transform: scale(1.1);
+}
+
+.login-btn {
+  cursor: pointer;
+}
+
+.product-img {
+  display: flex;
+  justify-content: flex-end;
 }
