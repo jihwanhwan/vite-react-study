@@ -7,17 +7,17 @@ const ProductDetail = () => {
 
   const [product, setProduct] = useState(null);
 
-  const getProductDetail = async () => {
-    let url = `http://localhost:3000/products/${id}`;
-    let response = await fetch(url);
-    let data = await response.json();
-    console.log(data);
-    setProduct(data);
-  };
+  // const getProductDetail = async () => {
+  //   let url = `http://localhost:3000/products/${id}`;
+  //   let response = await fetch(url);
+  //   let data = await response.json();
+  //   console.log(data);
+  //   setProduct(data);
+  // };
 
   useEffect(() => {
     const getProductDetail = async () => {
-      let url = `http://localhost:3000/products/${id}`;
+      let url = `https://my-json-server.typicode.com/jihwanhwan/jihwan-hnm/products/${id}`;
       let response = await fetch(url);
       let data = await response.json();
       console.log(data);
